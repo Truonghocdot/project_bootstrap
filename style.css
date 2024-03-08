@@ -8,25 +8,21 @@
 p {
   font-size: 16px;
 }
-
+button{
+  outline: none;
+}
 a {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: bold;
   color: #555 !important;
 }
 ul li a {
   font-size: 16px;
 }
-.logo{
+/* navba */
+.logo {
   padding-left: 140px;
-}
-.header {
-  margin-top: 0;
-  height: 112px;
-}
-.header .d-flex {
-  justify-content: space-between;
-}
-.header .row .col-3 img {
-  min-width: 85px;
 }
 .active-cus {
   color: #ff0000 !important;
@@ -57,215 +53,350 @@ ul li a {
 main {
   background-color: #f8f8f8;
 }
+/* carousel */
 #carouselId .carousel-inner .carousel-item img {
   width: 100%;
 }
-.card-body {
-  font-weight: 700;
-  text-align: center;
-  background-color: #ccc;
-  text-transform: uppercase;
-  font-size: 22px;
+/* list sản phẩm này */
+.card-deck {
+  margin: 0 auto !important;
   width: 88%;
-  margin: 8px 6%;
-  height: 88px;
+  margin: 0;
+}
+.card-deck .card:hover > img {
+  opacity: 0.75;
+}
+.card-deck .card:hover .card-title {
+  color: #fff;
+  background-color: #ff0000;
+}
+.card-deck .card img {
+  width: 100%;
+}
+.card-deck .card .card-title {
+  margin: 16px 18px;
+  line-height: 2.6;
+  font-size: large;
+  text-align: center;
+  text-transform: uppercase;
+  height: 48px;
+  background-color: #f5f5f5;
+}
+/* sản phẩm giảm giá này */
+.product-sale .container-fluid .row .d-flex .card{
+  width: 100%;
+}
+.btn-buy button {
+  border-radius: 4px;
+  width: 112px;
+  height: 42px;
+  border: none;
+  background-color: #ff0000;
+  color: #fff;
+}
+.row .d-flex i {
+  border-radius: 4px;
+  color: #fff;
+  margin-left: 12px;
+  background-color: #ff0000;
+  padding: 5px 18px 8px 18px;
+  width: 56px;
+}
+.btn-buy button:hover {
+  color: #ffff;
+  opacity: 0.5;
+}
+.row .d-flex i:hover {
+  opacity: 0.5;
+}
+/* banner dưới */
+.banner-bottom {
+  margin: 12px 0;
+  width: 100%;
+  height: auto;
+}
+.banner-bottom img {
+  width: 100%;
 }
 .title {
-  margin: 24px 48px;
-  position: relative;
-}
-.title h2 {
+  text-align: center;
+  margin: 12px 0;
   text-transform: uppercase;
 }
-.title::before {
-  content: "";
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  left: -38px;
-  top: 8px;
-  background: url(//bizweb.dktcdn.net/100/364/158/themes/802198/assets/icon-image.png?1705462866789)
-    no-repeat scroll -29px -168px;
+/* chi tiết sản phẩm */
+.product-detail {
+  margin: 28px 0;
+  width: 100%;
 }
-.card-body__info p {
+.product-detail .container .row .col-12{
+  margin: 12px auto;
+}
+.card-text__price{
+  font-weight: 700;
+  font-size: larger;
   color: #ff0000;
-}
-.product-sale .row .col-6 {
-  margin-top: 16px;
-}
-.product-sale .row .col-6 .card .d-flex .card-body__info .btn-buy button {
-  margin-right: 18px;
-  border-radius: 4px;
-  width: 112px;
-  height: 42px;
-  border: none;
-  background-color: #ff0000;
-  color: #fff;
-}
-.product-sale .row .col-6 .card .d-flex .card-body__info .d-flex {
-  border-radius: 4px;
-  width: 68px;
-  height: 42px;
-  background-color: #ff0000;
-  color: #fff;
-}
-.banner-bottom {
-  margin-bottom: 42px;
-  height: 278px;
-}
-.product-detail .row .col-2 {
-  border: #ccc 2px solid;
   text-align: center;
 }
-.product-detail .row .col-2 h4 {
-  text-transform: uppercase;
+.card-text__price span{
   font-weight: 400;
-}
-.product-detail .row .col-2 {
-  margin: 0 18px;
-}
-.product-detail .row .col-2:first-child {
-  margin-left: 38px;
-  border: none;
-}
-.product-detail .row .col-2 .sale-price {
-  font-size: 24px;
-  color: #ff0000;
-}
-.product-detail .row .col-2 .sale-price .price {
   color: #ccc;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: line-through;
 }
-.product-detail .row .col-2 button {
-  margin: 0 8%;
-  border-radius: 4px;
-  width: 112px;
-  height: 42px;
-  border: none;
-  background-color: #ff0000;
-  color: #fff;
+.card-title{
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
 }
-.product-detail .row .col-2 .d-flex {
-  margin-left: 15%;
+.card-icons {
+  justify-content: space-around;
 }
-.product-detail .row .col-2 .d-flex a {
-  display: inline-block;
-  width: 68px;
-  height: 42px;
-  border-radius: 4px;
-  background-color: #ff0000;
-}
-.product-detail .row .col-2 .d-flex a i {
-  margin-top: 12px;
-  color: #fff;
-}
+/* tin tức */
 .news {
-  margin-top: 12px;
+  display: block;
 }
 .news .title-news {
-  margin-left: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  width: 100%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  height: 48px;
-  padding-left: 24px;
+  padding: 12px;
   background-color: #ff0000;
   width: 100%;
   font-size: 28px;
 }
-.news .title-news h4 {
-  color: white;
-  text-transform: uppercase;
-  font-size: 2.4rem;
-}
-.news .card {
-  margin: 0.8em 1.8em;
-}
-.news .card .info p {
-  color: #ccc;
-}
-.news .card .info a {
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-.news .card .info a:hover {
+
+a:hover {
   text-decoration: none;
   color: #ff0000 !important;
 }
-.brands-bottom {
-  background-color: white;
-  margin: 0 auto;
-  display: flex;
-  width: 1430px;
+/* chân trang */
+footer{
+  background-color: #fff;
 }
-.brands-bottom .logo-brands {
-  padding: 0 8px;
+footer .container .row  .logo-bottom  p  a{
+  font-size: 1rem;
 }
-.footer-site {
-  margin: 0 auto;
-  width: 1430px;
+footer .container .row .col-lg-2 h5{
+  text-transform: uppercase;
+  color: #000;
 }
-.footer-site .row .col-2 .title {
-  width: 168px;
-}
-.footer-site .row .col-2 .title::before {
-  top: 2px;
-}
-.footer-site .row .col-2 .list-menu li a {
-  color: #000000;
-}
-.footer-site .row .col-2 .list-menu li a:hover {
-  padding-left: 8px;
+footer .container .row .col-lg-2 ul li a:hover{
+  padding-left: 8px ;
   text-decoration: none;
-  color: #ff0000 !important;
 }
 @media (max-width: 575.98px) {
-  .banner-bottom{
-    display: none;
+  .card-deck {
+    width: 100%;
   }
-  .header .row .col-6 {
-    display: none;
+  .form-info .container .row  .col-lg-8 input{
+    width: 100%;
   }
 }
-
+@media (max-width: 576px)  {
+  .table-content .container table tbody tr td img{
+    width: 80x;
+    height: 80px;
+  }
+}
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .logo{
-    padding-left: 0 !important;
-  }  
-
+  .card-deck {
+    width: 100%;
+  }
+  .card-deck .card .card-title {
+    font-size: 12px;
+    margin: 0;
+  }
+  .fomr-info .container .row  .col-lg-8 input{
+    width: 100%;
+  }
+  .table-content .container table tbody tr td img{
+    width: 80x;
+    height: 80px;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .header .row .col-6 {
-    display: none;
+  .card-deck {
+    width: 100%;
   }
-  .banner-bottom{
-    display: none;
+
+  .card-deck .card .card-body .card-title {
+    width: 100%;
+    font-size: 12px;
+  }
+  .card-deck .card .card-title {
+    margin: 0;
+  }
+  .btn-buy button {
+    font-size: 0.7rem;
+    width: 68px;
+    height: 38px;
+  }
+  .row .d-flex i {
+    padding: 4px 0px 9px 13px;
+    margin-left: 12px;
+    background-color: #ff0000;
+    width: 48px;
+  }
+  .form-info .container .row  .col-lg-8 input{
+    width: 100%;
+  }
+  .table-content .container table tbody tr td img{
+    width: 80x;
+    height: 80px;
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  .header .row .col-6 {
+  .card-deck {
+    width: 100%;
+  }
+  .card-deck .card .card-title {
+    margin: 0;
+  }
+  .product-detail .row .banner-left {
     display: none;
   }
-  .banner-bottom{
-    display: none;
+  .table-content .container table tbody tr td img{
+    width: 98x;
+    height: 98px;
   }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .info .img-top{
+    margin: 0 auto;
+    width: 36%;
+  }
+  .table-content .container table tbody tr td img{
+    width: 160px;
+    height: 160px;
+  }
+}
+/* --đăng nhập đăng ký */
+.bread-crumb{
+  height: 180px ;
+  min-height: 100px;
+  width: 100%;
+  background: url(//bizweb.dktcdn.net/100/364/158/themes/802198/assets/bg-bcrum.jpg?1705462866789) no-repeat 0 0 ;
+  background-size: cover;
+}
+.breadcrumb-container .title-page{
+  font-weight: bold;
+  margin-top: 8%;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+.breadcrumb-container ul{
+  background:none;
+}
+.breadcrumb-container ul .home i{
+  margin-right: 12px;
+  color: #ff0000;
+}
+.breadcrumb-container ul li strong span{
+  color: #fff;
+  font-weight: 600;
+}
+.breadcrumb-container ul .home a span{
+  font-weight: 600;
+  color: #ff0000;
+  font-size: 1em;
+}
+/* giới thiệu */
+.info{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.info img{
+  width: 100%;
 }
 
+/* liên hệ */
+.container iframe{
+  width: 100%;
+}
+.body-contact .container .row  .col-sm-4 p a:hover{
+  text-decoration: none;
+}
+.body-contact .container .row  .col-sm-4 p a{
+  font-weight: 400 ;
+  color: #ccc;
+  font-size: 1em;
+}
+.body-contact .container .row  .col-lg-12 .form-control input{
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.body-contact .container .row  .col-lg-12  textarea{
+  border: 1px solid #ced4da;  ;
+  outline: none;
+  width: 100%;
+}
+ .btn-post{
+  padding: 6px 16px;
+  color: #fff;
+  outline: none;
+  border: 1px solid #ff0000;
+  background-color: #ff0000;
+}
+.row  .col-lg-12 .btn-post:hover{
+  background-color: rgba(0,0,0,0);
+  color: #ff0000;
+}
+/* đây là phần tin tức */
+.news-page .container .row .col-12 .card .date{
+  text-align: center;
+  padding: 8px 12px;
+  left: -1px;
+  background-color: #ff0000;
+  height: 64px;
+  /* z-index: 1; */
+  position: absolute;
+}
+.news-page .container .row .col-12 .card .date .top{
+  border-bottom: 1px solid ;
+}
+.news-page .container .row .col-12 .card .date p{
+  color: #fff;
+  margin-bottom: 0;
 
-/* 
-@media only screen and (min-width: 768px) {
-  .logo{
-    padding: 0 !important; 
-  }
-} */
+}
+
+.news-page .container .row .col-12 .card .card-body .card-title {
+  text-align: left;
+  font-size: 20px;
+  color: #ff0000;
+}
+.news-page .container .row .col-12 .card .card-body .card-text a{
+  font-size: 16px;
+  font-weight: 400;
+}
+.news-page .container .row .col-12 .card .card-body .card-text a{
+  text-decoration: none;
+}
+/* cart */
+.table-content .container table tbody tr{
+  border-top: none;
+}
+.name-product{
+  font-size: 20px;
+    font-weight: 700;
+    width: 50%;
+}
+ .form-message {
+  color: red;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  padding: 4px 0 0;
+}
